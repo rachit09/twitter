@@ -1,0 +1,74 @@
+  
+  <section class="body">
+    
+    <div class="user-section">
+      
+      <div class="user-box" >
+        <div>
+        </div>
+        <div>
+          <div class="avatar">
+            <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+          </div>
+          <strong>
+            {{user.username}} <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+          </strong>
+          <p>
+            {{user.tweetername}}
+          </p>
+          <table class="user-info" >
+            <tr>
+              <td>                Tweets              </td>
+              <td>                Following              </td>
+              <td>                Followers              </td>
+            </tr>
+            <tr>
+              <td>    <strong>            {{user.tweets}}   </strong>           </td>
+              <td>     <strong>            {{user.following}}    </strong>          </td>
+              <td>     <strong>   {{user.followers}}             </strong> </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="tweet-section">
+      
+      <div class="write-tweet">
+        <div class="user-border">
+          <span class="glyphicon glyphicon-user"> </span>
+        </div>
+        <input type="text" name="tweet" class="tweet-input" placeholder="Whats happening?">
+      </div>
+
+      <div class="tweets-box">
+        <div class="user-border">
+          <img src="{{user.imgUrl}}" height="25px" width="25px">
+        </div>
+        <strong> {{user.username}} </strong> {{user.time}}
+        <div class="each-tweet">
+          {{user.tweet}}
+        </div>
+        <div class="tweets-info">
+          <span class="glyphicon glyphicon-refresh">
+            
+          </span> {{user.retweets}}
+          <span class="glyphicon glyphicon-thumbs-up">
+            
+          </span>{{user.up}}
+          <span class="glyphicon glyphicon-heart-empty">
+            
+          </span>{{user.likes}}
+          <span class="glyphicon glyphicon-envelope">
+            
+          </span>{{user.messages}}
+          <hr>
+        </div>
+      </div>
+
+    </div>
+
+
+  
+  </section>

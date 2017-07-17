@@ -1,0 +1,21 @@
+.footer{
+	background-color: #f00;
+	color: #fff
+}
+.header{
+	height: 50px;
+	border: 1px solid #000;
+}
+
+@media only screen and (min-width: 500px) {
+
+	.header>ul{
+		margin-top : 19px;
+	}
+}
+
+.header > ul>li {
+	display: inline;
+	margin-left: 188px;
+	padding-top: 20px;
+}
